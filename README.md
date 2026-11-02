@@ -23,11 +23,11 @@ Express, EJS, MySQL2 (Connection Pool), dotenv
 | TC-03 | Create | /produk/tambah | POST | Submit formulir produk baru | Data tersimpan, DevTools mencatat 302 Redirect ke /produk | Pass | ![TC-03](docs/screenshots/03-create-insert-prg.png.png) |
 | TC-04 | Update | /produk/edit/:id | POST | Mengubah harga dan stok | Nilai kolom di MySQL berubah sesuai input | Pass | ![TC-04](docs/screenshots/04-update-param-redirect.png.png) |
 | TC-05 | Delete | /produk/hapus/:id | POST | Klik tombol hapus | Baris terhapus dari MySQL dan UI ter-refresh | Pass | ![TC-05](docs/screenshots/05-delete-feedback.png.png) |
-| TC-06 | Keamanan | /uji-keamanan | GET | Input `' OR '1'='1` via URL | Input diperlakukan sebagai teks biasa (tanpa injeksi) | Pass | ![TC-06](docs/screenshots/06-sql-injection-mitigation.png,png) |
+| TC-06 | Keamanan | /uji-keamanan | GET | Input `' OR '1'='1` via URL | Input diperlakukan sebagai teks biasa (tanpa injeksi) | Pass | ![TC-06](docs/screenshots/06-sql-injection-mitigation.png.png) |
 
 ## Troubleshooting
 
 | Kasus | Bukti |
 |---|---|
-| ER_ACCESS_DENIED_ERROR | ![Kasus 1](docs/screenshots/07-error-access-denied.png) |
-| Bind parameters must not contain undefined | ![Kasus 2](docs/screenshots/08-error-undefined-bind.png) |
+| ER_ACCESS_DENIED_ERROR | ![Kasus 1](docs/screenshots/07-error-access-denied.png.png) |
+| Bind parameters must not contain undefined | ![Kasus 2](docs/screenshots/08-error-undefined-bind.png.png) |
